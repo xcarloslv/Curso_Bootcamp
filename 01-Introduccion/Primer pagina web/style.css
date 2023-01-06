@@ -1,0 +1,8 @@
+.titulo{
+    background-color: red;
+    display: inline-block;
+}
+.encabezado{
+    display:inline-flex;
+    background-color: aqua;
+}

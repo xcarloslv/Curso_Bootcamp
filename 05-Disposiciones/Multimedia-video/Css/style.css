@@ -1,0 +1,48 @@
+/*Vw=viewport width
+Vh=viewport height*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    /*object-file= el video quita las barras blancas de los lados, rellena
+    la pantalla con el video*/
+    object-fit: cover;
+    /*Es un objeto estatico en la pantalla position:fixed, aunque des scroll no se va de la 
+    pantalla*/
+    position: fixed;
+}
+.header{
+    /*Position relative= hace que no sea un block
+    invisible y lo pone de fondo*/
+    position: relative;
+    text-align: center;
+    /*<!--Flex se pone en linea(al lado de el)-->*/
+    display: flex;
+    /*los pone en columna todo*/
+    flex-direction: column;
+    gap: 10px;
+    /*Con justify content se mueve el flex en eje horizontal*/
+    justify-content: center;
+    /*Con align items se mueve el flex en eje vertical*/
+    align-items: center;
+    height: 100vh;
+    font-family:Helvetica ;
+    color: white;
+}
+
+.boton{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight:bold;
+    background-color: #F1DAC4;
+    padding: 5px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+.boton:hover{
+    opacity: 0.9;
+}

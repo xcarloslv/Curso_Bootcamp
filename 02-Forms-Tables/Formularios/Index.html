@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formularios</title>
+</head>
+<body>
+    <section class="forms">
+        <!--Agrupa elementos donde se pueden introducir datos-->
+        <!--method post es para serviores. GET es para paginas-->
+        <form action="resultados.html" method="get">
+            <div>
+                <!--Input=Es una etiqueta donde se pueden ingresar datos
+                Label=Pone una etiqueta a uno de los input-->
+                <div>
+                    <label for="usuario">Nombre de usuario:</label>
+                    <!--Place holder es lo que se ve de fondo en el input-->
+                    <input type="text" name="usuario" id="usuario" required placeholder="Usuario">
+                </div>
+                <br>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" name="contraseña" id="contraseña" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br>
+                <div>
+                    <label for="nacimiento">¿Cual es tu fecha de nacimiento ?</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for="edad">¿Cual es tu edad?</label>
+                    <input type="number" name="edad" id="edad" min="0" max="100">
+                </div>
+                <br>
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="20" rows="1"></textarea>
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

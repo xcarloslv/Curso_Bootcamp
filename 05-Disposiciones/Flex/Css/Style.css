@@ -1,0 +1,32 @@
+.flex{
+    background-color: yellow;
+    height: 300px;
+    display: flex;
+        /*Con justify content se mueve el flex en eje horizontal*/
+    justify-content: space-around;
+    /*Sirve para mover en el eje vertical*/
+    align-items:center;
+    /*flex-wrap:nowrap redimenciona a 0*/
+    /*flex-wrap: nowrap;*/
+
+    /*Se cambia el eje principal de horizontal a vertical*/
+    /*flex-direction: row-reverse;*/
+}
+.contenido-1{
+    background-color: white;
+    /*height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+} 
+.contenido-2{
+    background-color: white;
+   /* height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}
+.contenido-3{
+    background-color: pink;
+    /*height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}

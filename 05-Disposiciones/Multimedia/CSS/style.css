@@ -1,0 +1,30 @@
+/*vw= sirve para poner la imagen llenando toda la pantalla
+hover= es cuando se pasa el cursor por esa zona
+gap=pone espacio entre las imagenes
+flex wrap=wrap Los elementos flex son colocados en varias líneas. */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.imagen-principal{
+    width: 100vw;
+    opacity: 0.5;
+}
+.imagen-principal:hover{
+    width: 100vw;
+    opacity: 1;
+}
+.galeria{
+    background-color: beige;
+}
+.imagen-galeria{
+    width: 150px;
+    height: 150px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.imagen-galeria:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}

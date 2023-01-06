@@ -1,0 +1,31 @@
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.color-rgb{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(100, 0, 200);
+}
+.body{
+    background-image:url(https://www.designyourway.net/blog/wp-content/uploads/2018/06/Seamless-Polygon-Background.jpg) ;
+    /*Sirve para acomodar la imagen*/
+    background-position: center;
+}
+.tarjeta{
+    height: 200px;
+    display: inline-block;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+}
+.encabezado{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.descripcion{
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
