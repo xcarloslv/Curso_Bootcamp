@@ -11,42 +11,130 @@
 <body>
     <div class="container ">
         <form action="">
-            <div class="mb-3">
-                <label for="Ejemplolabel" class="form-label mt-5">Direccion de email</label>
-                <input type="email" class="form-control" id="Ejemplolabel" placeholder="Email">
-                <div class="form-text">Solo el email</div>
-            </div>
-            <div class="mb-3">
-                <label for="contraseña" class="form-label">Contraseña</label>
-                <input type="text" readonly id="contraseña" class="form-control" placeholder="Contraseña">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input">
-                <label for="" class="form-check-label">Check me out</label>
-            </div>
-            <button class="btn btn-primary">Enviar</button>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="Ejemplolabel" class="form-label mt-5">Direccion de email</label>
+                    <input type="email" class="form-control" id="Ejemplolabel" placeholder="Email">
+                    <div class="form-text">Solo el email</div>
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="text" readonly id="contraseña" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Check me out</label>
+                </div>
+                <button class="btn btn-primary">Enviar</button>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Elije el archivo</label>
-                <input type="file" class="form-control">
+                <div class="mb-3">
+                    <label for="" class="form-label">Elije el archivo</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                    <input type="color" class="form-control form-control-color" name="" id="">
+                </div>
+
+                <div class="mb-3">
+                    <lable class="form-lablel">Ejemplo de lista</lable>
+                    <input list="lista" class="form-control" placeholder="Buscar..">
+                    <datalist id="lista">
+                        <option  value="San Francisco"></option>
+                        <option  value="San Francisco"></option>
+                        <option  value="San Francisco"></option>
+                        <option  value="San Francisco"></option>
+                        <option  value="San Francisco"></option>
+
+                    </datalist>
+                </div>
+
+
+                <div class="my-5">
+                    <select name="" class="form-select form-select-lg" id="">
+                        <option selected>Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                        <option value="4">Opcion 4</option>
+                        <option value="5">Opcion 5</option>
+                    </select>
+                    <select name="" class="form-select mt-3" disabled id="">
+                        <option selected>Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                        <option value="4">Opcion 4</option>
+                        <option value="5">Opcion 5</option>
+                    </select>
+                    <select name="" class="form-select mt-3" multiple size="3"  id="">
+                        <option selected>Opcion 1</option>
+                        <option value="2">Opcion 2</option>
+                        <option value="3">Opcion 3</option>
+                        <option value="4">Opcion 4</option>
+                        <option value="5">Opcion 5</option>
+                    </select>
+                </div>
+
             </div>
+            <div class="row">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Default</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" disabled>
+                    <label for="" class="form-check-label">Default</label>
+                </div>
 
-            <div class="mb-3">
-                <label for="exampleColorInput" class="form-label">Color picker</label>
-                <input type="color" class="form-control form-control-color" name="" id="">
-            </div>
+                <div class="form-check mt-4" >
+                    <input type="radio" class="form-check-input" name="radio">
+                    <label for="" class="form-check-label">Default radio</label>
+                </div>
+                <div class="form-check" >
+                    <input type="radio" class="form-check-input" name="radio" checked>
+                    <label for="" class="form-check-label">Default radio checked</label>
+                </div>
+                <div class="form-check" >
+                    <input type="radio" class="form-check-input" disabled>
+                    <label for="" class="form-check-label">Default radio</label>
+                </div>
+                <div class="form-check form-switch mt-4">
+                    <input type="checkbox" class="form-check-input" role="switch">
+                    <label for="" class="form-check-label"> Default check switch</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" role="switch" checked>
+                    <label for="" class="form-check-label"> Checked switch</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" role="switch" disabled>
+                    <label for="" class="form-check-label"> Disabled switch</label>
+                </div>
 
-            <div class="mb-3">
-                <lable class="form-lablel">Ejemplo de lista</lable>
-                <input list="lista" class="form-control" placeholder="Buscar..">
-                <datalist id="lista">
-                    <option  value="San Francisco"></option>
-                    <option  value="San Francisco"></option>
-                    <option  value="San Francisco"></option>
-                    <option  value="San Francisco"></option>
-                    <option  value="San Francisco"></option>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                </div>       
+                
+                <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
 
-                </datalist>
+                <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
             </div>
         </form>
     </div>
